@@ -1,0 +1,74 @@
+@media only screen and  (min-width:992px) and (max-width:1200px){
+
+    .home .home-banner1 {
+        height: 65vh;
+    }
+}
+
+
+@media only screen and  (min-width:768px) and (max-width:992px){
+
+    .home .home-banner1 {
+        height: 50vh;
+    }
+
+    .home .banner-text h1 {
+        font-size: 4rem;
+    }
+
+    .home .banner-text {
+        top: 20%;
+        left: 20%;
+    }
+}
+
+@media only screen and  (min-width:576px) and (max-width:768px){
+
+    .home .home-banner1 {
+        height: 41vh;
+    }
+
+    .home .banner-text h1 {
+        font-size: 3rem;
+    }
+
+    .home .banner-text {
+        top: 20%;
+        left: 20%;
+    }
+
+    .home .banner-text h3{
+        font-size: 1.1rem;
+    }
+}
+
+@media only screen and  (max-width:576px){
+
+    .home .home-banner1 {
+        height: 27vh;
+    }
+    
+    .home .banner-text {
+        top: 12%;
+        left: 14%;
+    }
+
+    .home .banner-text h1 {
+        font-size: 2rem;
+    }
+
+    .home .banner-text h3{
+        font-size: 1rem;
+    }
+
+    .home .carousel-indicators [data-bs-target] {
+        height: 2px;
+        width: 15px;
+    }
+
+    .home .banner-text button{
+        padding: 1px 3px;
+        font-size: small;
+    }
+
+}

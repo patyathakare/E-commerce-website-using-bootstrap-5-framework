@@ -42,7 +42,37 @@ padding: 0px 10px;
     color: var(--text-red);
 }
 
-.home .home-banner1 , .home-banner2{
-    background: url(../images/slide1.jpg) no-repeat center/center ;
-    height: 500px;
+
+.home .home-banner1{
+    background: url('../images/slide1.jpg') center center/cover no-repeat;
+    height: 79vh;
+    position: relative;
+}
+
+.home .home-banner2{
+    background: url('../images/slide2.jpg') center center/cover no-repeat;
+    height: 79vh;
+    position: relative;
+}
+
+.home .banner-text{
+    top: 27%;
+    left: 25%;
+    position: absolute;
+}
+
+.home .banner-text h1{
+    font-size: 5rem;
+}
+
+.home .banner-text button:hover{
+    background-color: transparent;
+    color: var(--text-red);
+}
+
+
+.home .carousel-indicators [data-bs-target]{
+    background-color: var(--bg-red);
+    height: 5px;
+    width: 30px;  
 }
