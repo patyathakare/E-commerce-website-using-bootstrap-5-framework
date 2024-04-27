@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+
+    /* text color */
+    --text-black:black;
+    --text-red:red;
+    --text-grey:grey;
+--text-white:white;
+
+    /* bgcolors */
+    --bg-white:white;
+    --bg-red:red;
+
+}
+
+body{
+    font-weight:400;
+    overflow-x: hidden;
+    color: var(--text-black);
+    background-color: var(--bg-white);
+}
+
+a, a:hover{
+    text-decoration: none;
+}
+
+#header .fixed-top{
+    box-shadow: 0px 1px 12px 1px  rgb(97, 94, 94);
+}
+
+#header .navbar .nav-item .nav-link{
+    color: var(--text-black);
+padding: 0px 10px;
+}
+
+#header .navbar .nav-item .nav-link:hover,
+#header .navbar .nav-item .nav-link.active{
+    color: var(--text-red);
+}
+
+.home .home-banner1 , .home-banner2{
+    background: url(../images/slide1.jpg) no-repeat center/center ;
+    height: 500px;
+}
