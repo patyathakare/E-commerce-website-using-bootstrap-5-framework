@@ -1,122 +1,130 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
 
-:root{
+:root {
 
     /* text color */
-    --text-black:black;
-    --text-red:red;
-    --text-grey:grey;
---text-white:white;
+    --text-black: black;
+    --text-red: red;
+    --text-grey: grey;
+    --text-white: white;
 
     /* bgcolors */
-    --bg-white:white;
-    --bg-red:red;
+    --bg-white: white;
+    --bg-red: red;
 
 }
+
 /* body */
-body{
-    font-weight:400;
+body {
+    font-weight: 400;
     overflow-x: hidden;
     color: var(--text-black);
     background-color: var(--bg-white);
 }
 
-a, a:hover{
+a,
+a:hover {
     text-decoration: none;
 }
 
 /* navbar  */
-#header .fixed-top{
-    box-shadow: 0px 1px 12px 1px  rgb(97, 94, 94);
+#header .fixed-top {
+    box-shadow: 0px 1px 12px 1px rgb(97, 94, 94);
 }
 
-#header .navbar .nav-item .nav-link{
+#header .navbar .nav-item .nav-link {
     color: var(--text-black);
-padding: 0px 10px;
+    padding: 0px 10px;
 }
 
-#header .navbar .nav-item .nav-link:hover,
-#header .navbar .nav-item .nav-link.active{
+#header .navbar .nav-item .nav-link:active {
     color: var(--text-red);
 }
 
+#header .navbar .nav-item .nav-link:hover,
+#header .navbar .nav-item .nav-link.active {
+    color: var(--text-red);
+}
+
+
+
 /* home slider */
-.home .home-banner1{
+.home .home-banner1 {
     background: url('../images/slide1.jpg') center center/cover no-repeat;
     height: 79vh;
     position: relative;
 }
 
-.home .home-banner2{
+.home .home-banner2 {
     background: url('../images/slide2.jpg') center center/cover no-repeat;
     height: 79vh;
     position: relative;
 }
 
-.home .banner-text{
+.home .banner-text {
     top: 27%;
     left: 25%;
     position: absolute;
 }
 
-.home .banner-text h1{
+.home .banner-text h1 {
     font-size: 5rem;
 }
 
-.home .banner-text button:hover{
+.home .banner-text button:hover {
     background-color: transparent;
     color: var(--text-red);
 }
 
 
-.home .carousel-indicators [data-bs-target]{
+.home .carousel-indicators [data-bs-target] {
     background-color: var(--bg-red);
     height: 5px;
-    width: 30px;  
+    width: 30px;
 }
 
 
 /* offers  */
-.offer{
+.offer {
     padding: 110px 0px;
 }
 
-.offer .offer-box{
+.offer .offer-box {
     cursor: pointer;
     color: white;
 }
 
-.offer .offer-box .offer-img::before{
+.offer .offer-box .offer-img::before {
     content: "";
     background: rgba(255, 255, 255, 0.3);
     position: absolute;
     height: 100%;
     width: 30%;
-    top:0px;
-    left:-100%;
+    top: 0px;
+    left: -100%;
     transform: skewX(-30deg);
     z-index: 2;
 }
 
-.offer .offer-box:hover .offer-img::before{
+.offer .offer-box:hover .offer-img::before {
     animation: shine 1s;
 }
 
-@keyframes shine{
-   100%{
-    left: 150%;
-   }
+@keyframes shine {
+    100% {
+        left: 150%;
+    }
 }
 
-.offer .offer-box .offer-overlay::before{
+.offer .offer-box .offer-overlay::before {
     content: "";
     position: absolute;
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.5);
     top: 0;
     left: 0px;
     bottom: 0;
@@ -124,7 +132,7 @@ padding: 0px 10px;
     z-index: 1;
 }
 
-.offer .offer-box .offer-info{
+.offer .offer-box .offer-info {
     position: absolute;
     top: 0;
     left: 0;
@@ -140,14 +148,62 @@ padding: 0px 10px;
     font-size: 1.2rem;
 }
 
-.offer .offer-box button{
+.offer .offer-box button {
     color: var(--text-white);
     border-color: var(--bg-white);
     font-weight: 500;
 }
 
-.offer .offer-box button:hover{
+.offer .offer-box button:hover {
     background: var(--bg-red);
     border-color: var(--bg-red);
     transition: all 0.5s;
+}
+
+.headline h1::before {
+    content: '';
+    width: 30%;
+    height: 5px;
+    position: absolute;
+    background-color: var(--bg-red);
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#products .card-inner {
+    cursor: pointer;
+}
+
+#products .card-inner:hover .img-secondary {
+    opacity: 1;
+    transition: 0.9s;
+}
+
+.img-box .img-secondary {
+    left: 0px;
+    opacity: 0;
+}
+
+#products .card-inner .product-info ul li {
+    list-style: none;
+    padding: 0px 3px;
+}
+
+#products .card-inner .product-info ul .active {
+    color: rgb(220, 220, 20);
+}
+
+#products .card-inner .product-info .card-text:hover {
+    color: var(--text-red);
+}
+
+#products .card-inner button {
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+}
+
+#products .card-inner .product-info p {
+    margin-bottom: 0px;
 }
